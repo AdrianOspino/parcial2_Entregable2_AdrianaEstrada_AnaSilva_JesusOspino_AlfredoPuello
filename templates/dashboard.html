@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Asesorías Psicológicas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .usuario-info {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .servicios {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .servicio {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .servicio h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .servicio p {
+            color: #555;
+        }
+        .imagen {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Para centrar la imagen */
+        }
+        .info-caja {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .caja {
+            flex-basis: 23%;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .caja h3 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .caja p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1> Asesorías Psicológicas</h1>
+    </div>
+    <div class="usuario-info">
+        <p>Bienvenido, <strong>{{ usuario_info }}</strong></p>
+    </div>
+    <div class="imagen">
+        <img src="https://st.depositphotos.com/28960142/54560/i/450/depositphotos_545608168-stock-illustration-flat-psychologist-office-patient-individual.jpg" alt="Imagen de consultorio psicológico">
+    </div>
+    <div class="servicios">
+        <div class="servicio">
+            <h2>Asesoría Individual</h2>
+            <p>Ofrecemos sesiones individuales con psicólogos especializados para tratar diferentes áreas psicológicas.</p>
+        </div>
+        <div class="servicio">
+            <h2>Terapia de Pareja</h2>
+            <p>Brindamos apoyo y orientación para resolver conflictos y mejorar la comunicación en relaciones de pareja.</p>
+        </div>
+        <div class="servicio">
+            <h2>Asesoría Familiar</h2>
+            <p>Ayudamos a las familias a superar dificultades y fortalecer los vínculos familiares a través de sesiones conjuntas.</p>
+        </div>
+        <div class="servicio">
+            <h2>Terapia Infantil</h2>
+            <p>Tratamos problemas emocionales y de comportamiento en niños y adolescentes utilizando métodos adecuados a su edad.</p>
+        </div>
+    </div>
+    <div class="info-caja">
+        <div class="caja">
+            <h3>Horarios de Atención</h3>
+            <p>Lunes a Viernes: 9am - 6pm</p>
+        </div>
+        <div class="caja">
+            <h3>Contacto</h3>
+            <p>Teléfono: 123-456-789</p>
+            <p>Email: info@asesoriaspsicologicas.com</p>
+        </div>
+        <div class="caja">
+            <h3>Ubicación</h3>
+            <p>Calle Principal, Número 123</p>
+            <p>Ciudad, País</p>
+        </div>
+        <div class="caja">
+            <h3>Redes Sociales</h3>
+            <p>Facebook: @asesoriaspsicologicas</p>
+            <p>Instagram: @asesoriaspsicologicas</p>
+        </div>
+    </div>
+</body>
+</html>
